@@ -1,6 +1,6 @@
 # 📚 API Documentation
 
-This document describes the available API endpoints for **user authentication** and **highlight stats** (for American football). 
+This document describes the available API endpoints for **user api** and **highlight api**. 
 
 ---
 
@@ -25,7 +25,7 @@ POST /api/Authentication/login
 Request:
 ```
  
-Copy code
+
 { 
   "Email": "testuser@gmail.com", 
   "Password": "Test@1234" 
@@ -35,10 +35,12 @@ Response: HTTP 200 OK ✅ (JWT Token)
 
 3. Get User Profile:
 GET /api/Authentication/userId
+```
 Request: Authorization: Bearer <JWT_Token>
+```
 Response: HTTP 200 OK 📄 - User profile
 
-4. Update User Profile:
+5. Update User Profile:
 PUT /api/Authentication/userId
 Request:
 
