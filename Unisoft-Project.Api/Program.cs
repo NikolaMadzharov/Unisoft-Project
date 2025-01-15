@@ -53,14 +53,11 @@ namespace Unisoft_Project.Api
 
             builder.Services.AddScoped<ITokenService, TokenService>();
             builder.Services.AddScoped<IUserService, UserService>();
+            builder.Services.AddScoped<IHighlightService, HighlightService>();
 
             var app = builder.Build();
 
-            if (app.Environment.IsDevelopment())
-            {
-                app.UseSwagger();
-                app.UseSwaggerUI();
-            }
+            
 
             app.UseHttpsRedirection();
             app.UseAuthentication();
