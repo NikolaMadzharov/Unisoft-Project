@@ -7,7 +7,7 @@ This document describes the available API endpoints for **user api** and **highl
 ## 🧑‍💻 Authentication API
 
 ### 1. **Register User**:  
-`POST /api/Authentication/register`  
+`POST /api/authenticaiton/register`  
 **Request**:  
 ```
 { 
@@ -21,7 +21,7 @@ This document describes the available API endpoints for **user api** and **highl
 Response: HTTP 201 Created 🎉
 
 2. Login User:
-POST /api/Authentication/login
+POST /api/authenticaiton/login
 Request:
 ```
  
@@ -34,14 +34,14 @@ Request:
 Response: HTTP 200 OK ✅ (JWT Token)
 
 3. Get User Profile:
-GET /api/Authentication/userId
+GET /api/authenticaiton/userId
 ```
 Request: Authorization: Bearer <JWT_Token>
 ```
 Response: HTTP 200 OK 📄 - User profile
 
 5. Update User Profile:
-PUT /api/Authentication/userId
+PUT /api/authenticaiton/userId
 Request:
 
 
